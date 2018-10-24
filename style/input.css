@@ -1,0 +1,99 @@
+.form_box
+{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input_wrapper
+{
+    display: block;
+    padding: 10px 10px 0 10px;
+}
+
+.input_wrapper label
+{
+    padding-bottom: 5px;
+}
+
+.input_wrapper input
+{
+    width: 100%;
+    max-width: 600px;
+}
+
+form span
+{
+    font-size: 13px!important;
+}
+
+label
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #2196f3;
+}
+
+input, textarea
+{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    border: 2px solid #bbdefb;
+    color: #333;
+    font-size: 14px;
+}
+
+textarea
+{
+    width: 100%;
+    min-height: 100px;
+}
+
+input
+{
+    width: 250px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input:focus, textarea:focus
+{
+    border-color: #2196f3;
+}
+
+button
+{
+    font-family: 'Roboto', sans-serif;
+    
+    outline: none;
+    background-color: #2196f3;
+    border: none;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+    border-radius: 2px;
+    margin-right: 5px;
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button:hover
+{
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+}
+
+button:active
+{
+    background-color: transparent;
+    border-color: #1e88e5;
+    color: #1e88e5;
+}

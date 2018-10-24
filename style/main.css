@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Source+Serif+Pro');
+@import url('default.css');
+@import url('input.css');
+
+.fixed_nav_wrapper
+{
+    width: 100%;
+    position: fixed;
+}
+
+span, applet, object, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{
+  font-family: 'Source Serif Pro', serif;
+  color: #333;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+i, cite, em, var, address, dfn 
+{
+    font-style: italic;
+}
+
+b, strong
+{
+    font-weight: bold;
+}
+
+ins
+{
+    text-decoration: cancel-underline;
+}
+
+p
+{
+    margin: 4px 0;
+}
+
+a
+{
+    color: #ff6d00;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.4;
+}
+
+/*h4, h5, h6
+{
+    font-family: 'Roboto Slab', serif;
+}*/
+
+h1 
+{
+    font-size: 45px;
+    /*font-size: 32px;*/
+}
+
+h2
+{
+    font-size: 39.0625px;
+    /*font-size: 24px;*/
+}
+
+h3 
+{
+    font-size: 31.25px;
+}
+
+h4 
+{
+    font-size: 25px;
+}
+
+h5
+{
+    font-size: 20px;
+}
+
+h6 
+{
+    font-size: 16px;
+}
+
+.bottom
+{
+    bottom: 0;
+}
+
+.inline-block
+{
+    display: inline-block;
+}
+
+.inline
+{
+    display: inline;
+}
+
+.main_content
+{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 5px;
+}
+
+.margin_auto
+{
+    margin: 0 auto;
+}
+
+/*.content {
+    font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+ 
+.title {
+    font: 1.7em/1.2 Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+ 
+.code {
+    font: 0.8em/1.6 Monaco, Mono-Space, monospace;
+}*/
