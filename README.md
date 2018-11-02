@@ -4,7 +4,7 @@
 
 ## Настройки
 
-Перейдите в файл ``scripts/confgi.js`` 
+Перейдите в файл ``scripts/config.js`` 
 
 ```JavaScript
 var config = {
