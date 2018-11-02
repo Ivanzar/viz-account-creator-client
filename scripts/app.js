@@ -1,9 +1,8 @@
 require.config({
-    baseUrl:'scripts/js',
+    baseUrl: 'scripts/js',
     paths:{
-        lib:'../libs',
-        jquery:'../libs/jquery.min',
-        viz:'../libs/viz'
+        lib: '../libs',
+        jquery: '../libs/jquery.min'
     },
     shim:{
         viz:{
@@ -12,8 +11,9 @@ require.config({
     }
 });
 
-require(['jquery'],
-        function ($)
+require(['jquery', 'controller'],
+        function ($, controller)
         {
+            controller.init();
         }
 );
