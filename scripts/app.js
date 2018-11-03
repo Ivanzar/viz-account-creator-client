@@ -2,7 +2,8 @@ require.config({
     baseUrl: 'scripts/js',
     paths:{
         lib: '../libs',
-        jquery: '../libs/jquery.min'
+        jquery: '../libs/jquery.min',
+        viz: '../libs/viz.min'
     },
     shim:{
         viz:{

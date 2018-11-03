@@ -1,12 +1,13 @@
-define(['jquery', 'request'],
-        function ($, req)
+define(['jquery', 'request', 'viz'],
+        function ($, req, viz)
         {
             request = req;
             window['$'] = $;
+            window.viz = viz;
             return module.init();
         });
 
-var request, $;
+var request, $, viz;
 
 function Controller()
 {
@@ -39,11 +40,11 @@ Controller.prototype.init = function ()
 
         var keys = viz.auth.generateKeys(login, pass, ['owner', 'active', 'posting', 'memo']);
         
-        that.create(login, keys);
+        that.create(login, pass, keys);
     });
 }
 
-Controller.prototype.create = function (login, keys) 
+Controller.prototype.create = function (login, pass, keys) 
 {
             
     request.create(login, keys.memo, keys.posting, keys.active, keys.owner, function (err, res)
@@ -76,6 +77,37 @@ Controller.prototype.create = function (login, keys)
 
         alert('Аккаунт ' + login + ' создан успешно!');
         console.log(res);
+
+        //var keys = res.result.operations[0][1];
+
+        var roles = ['owner', 'active', 'posting', 'memo'];
+        var keys = viz.auth.getPrivateKeys(login, pass, roles);
+
+        var active = keys.active;
+        var posting = keys.posting;
+        var owner = keys.owner;
+        var memo = keys.memo;
+
+        var toCopy = 'Пароль: '+pass+'\n'
+        +'Active: '+active+'\n'
+        +'Posting: '+posting+'\n'
+        +'Owner: '+owner+'\n'
+        +'Memo: '+memo;
+
+        $('#out').html(
+            `<h2>Ключи и пароль</h2>
+            <p><strong>Обязательно сохраните пароль и ключи в надёжном месте!</strong> Потеряв их, вы навсегда утратите доступ к аккаунту.</p>
+            <p>Пароль: ${pass}
+            <p>Active: ${active}
+            <p>Posting: ${posting}
+            <p>Owner: ${owner}
+            <p>Memo: ${memo}
+            <br>
+            <button class="btn" data-clipboard-text="${toCopy}">
+                Копировать
+            </button>
+            <script>new ClipboardJS('.btn');</script>`);
+
     });
 }
 
