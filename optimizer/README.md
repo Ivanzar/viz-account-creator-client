@@ -1,5 +1,7 @@
 ``$ npm install -g requirejs``
+
 ``$ r.js -o build.js``
+
 ``$ r.js -o build.css.js``
 
 Скопируйте в эту папку файл ``index.html``
