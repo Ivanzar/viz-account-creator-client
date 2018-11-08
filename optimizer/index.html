@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Регистрация в VIZ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="main-css.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+        
+        <script src="main-built.js"></script>
+    </head>
+    <body>
+        <main class="main_content">
+            
+            <h1>Регистрация в VIZ.world</h1>
+            <p>С помощью этой формы вы можете создать аккаунт в блокчейне VIZ.world.</p>
+            <p>Чтобы создать пользователя, укажите новый логин в поле "Логин".</p>
+            <p>Затем придумайте сложный пароль и впишите его в поле "Пароль".</p>
+            <p><strong>Обязательно сохраните пароль в надёжном месте!</strong> Потеряв его, вы навсегда утратите доступ к аккаунту.</p>
+            
+            <form autocomplete="off">
+                <div>
+                    <div class="input_wrapper">
+                        <label>Логин</label>
+                        <input id="fld-login">
+                    </div>
+                    <div class="input_wrapper">
+                        <label>Пароль</label>
+                        <input id="fld-pass">
+                    </div>
+                    <div class="input_wrapper">
+                        <button id="btn-create" type="button">Создать</button>
+                    </div>
+                </div>
+            </form>
+            <div id="out"></div>
+            </div>
+        </main>
+    </body>
+</html>
